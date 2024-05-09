@@ -1,0 +1,91 @@
+.add_btn {
+    -fx-background-color: #392094;
+    /* Button background color (coral in this example) */
+    -fx-background-radius: 5;
+
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+    /* Set the corner radius to 10 pixels */
+    -fx-text-fill: white;
+    /* Text color for the button */
+}
+
+
+.add_btn:hover {
+    -fx-background-color: #ada2e0;
+}
+.assign_btn {
+    -fx-background-color: #107892;
+    /* Button background color (coral in this example) */
+    -fx-background-radius: 5;
+
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+    /* Set the corner radius to 10 pixels */
+    -fx-text-fill: white;
+    /* Text color for the button */
+}
+
+
+.assign_btn:hover {
+    -fx-background-color: #a8d5d6;
+}
+.card_clearence_btn {
+    -fx-background-color: #92108c;
+    /* Button background color (coral in this example) */
+    -fx-background-radius: 5;
+
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+    /* Set the corner radius to 10 pixels */
+    -fx-text-fill: white;
+    /* Text color for the button */
+}
+
+
+.card_clearence_btn:hover {
+    -fx-background-color: #cabbcf;
+}
+
+.return_bus_btn {
+    -fx-background-color: #10921b;
+    /* Button background color (coral in this example) */
+    -fx-background-radius: 5;
+
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+    /* Set the corner radius to 10 pixels */
+    -fx-text-fill: white;
+    /* Text color for the button */
+}
+
+
+.return_bus_btn:hover {
+    -fx-background-color: #98d490;
+}
+.student_request_btn {
+    -fx-background-color: #a0910e;
+    /* Button background color (coral in this example) */
+    -fx-background-radius: 5;
+
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+    /* Set the corner radius to 10 pixels */
+    -fx-text-fill: white;
+    /* Text color for the button */
+}
+
+
+.student_request_btn:hover {
+    -fx-background-color: #dace6b;
+}

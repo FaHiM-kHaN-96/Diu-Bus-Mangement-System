@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.logi_in.CardCheckerController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="backgroundpage" stylesheets="@cssshit/loginpage.css">
+         <children>
+            <ComboBox fx:id="bus_name_combo" layoutX="186.0" layoutY="205.0" prefHeight="36.0" prefWidth="231.0" />
+            <Button fx:id="clearance" layoutX="410.0" layoutY="286.0" mnemonicParsing="false" onAction="#bus_switcher" prefHeight="43.0" prefWidth="137.0" styleClass="t_btn" stylesheets="@cssshit/primary.css" text="Clear" />
+            <Label layoutX="216.0" layoutY="159.0" prefHeight="26.0" prefWidth="158.0" styleClass="t_label" stylesheets="@cssshit/primary.css" text="Select Bus Name" />
+            <Label layoutX="117.0" layoutY="45.0" prefHeight="41.0" prefWidth="482.0" styleClass="t_label" stylesheets="@cssshit/ath_dashboard.css" text="Transport Card Authentication" />
+            <ImageView fitHeight="76.0" fitWidth="95.0" layoutX="14.0" layoutY="29.0">
+               <image>
+                  <Image url="@img/student-card.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

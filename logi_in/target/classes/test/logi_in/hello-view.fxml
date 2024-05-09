@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.logi_in.HelloController">
+   <children>
+      <AnchorPane fx:id="login_form" prefHeight="200.0" prefWidth="200.0" styleClass="backgroundpage" stylesheets="@cssshit/primary.css">
+         <children>
+            <Label layoutX="87.0" layoutY="183.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Email" />
+            <Label layoutX="87.0" layoutY="264.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Password" />
+            <TextField fx:id="lgpg_emailfeld" layoutX="182.0" layoutY="179.0" prefHeight="30.0" prefWidth="266.0" promptText="Email Address" styleClass="text-field" stylesheets="@cssshit/primary.css" />
+            <Label fx:id="passlabel" layoutX="183.0" layoutY="260.0" prefHeight="30.0" prefWidth="266.0" styleClass="text-field" stylesheets="@cssshit/primary.css" />
+            <PasswordField fx:id="lgpg_passfeld" layoutX="183.0" layoutY="260.0" prefHeight="30.0" prefWidth="266.0" promptText="***********" styleClass="passview_btn" stylesheets="@cssshit/primary.css" />
+            <Label layoutX="220.0" layoutY="82.0" styleClass="t_label" stylesheets="@cssshit/primary.css" text="DIU Student Bus Management " textFill="#8d0505" />
+            <Button fx:id="login_btn" layoutX="340.0" layoutY="323.0" mnemonicParsing="false" onAction="#lgpg_login_btn" prefHeight="37.0" prefWidth="122.0" styleClass="t_btn" stylesheets="@cssshit/primary.css" text="Log in " textFill="#a2add7a8" />
+            <Button fx:id="signup_btn" layoutX="220.0" layoutY="371.0" mnemonicParsing="false" onAction="#lgpg_signup_btn" prefHeight="40.0" prefWidth="191.0" styleClass="st_btn" stylesheets="@cssshit/primary.css" text="Ceate Account" textFill="#000000bd" />
+            <ImageView fitHeight="65.0" fitWidth="122.0" layoutX="75.0" layoutY="63.0">
+               <image>
+                  <Image url="@img/bus%20logo%203.png" />
+               </image>
+            </ImageView>
+            <ToggleButton fx:id="togglebtn" layoutX="392.0" layoutY="256.0" mnemonicParsing="false" onAction="#showpass_btn" prefHeight="26.0" prefWidth="45.0" styleClass="passb_btn" stylesheets="@cssshit/primary.css">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@img/eye.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="sign_up_form" prefHeight="200.0" prefWidth="200.0" styleClass="backgroundpage2" stylesheets="@cssshit/primary.css" visible="false">
+         <children>
+            <Label layoutX="99.0" layoutY="150.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Email " />
+            <Label layoutX="99.0" layoutY="243.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Re-password" />
+            <Label layoutX="214.0" layoutY="46.0" prefHeight="47.0" prefWidth="229.0" stylesheets="@cssshit/primary.css" text="Create Account">
+               <font>
+                  <Font name="Tahoma Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="192.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Password" />
+            <TextField fx:id="signpg_repassfeld" layoutX="236.0" layoutY="239.0" prefHeight="25.0" prefWidth="207.0" promptText="*********" styleClass="text-field" stylesheets="@cssshit/primary.css" />
+            <TextField fx:id="signpg_passfeld" layoutX="236.0" layoutY="188.0" prefHeight="25.0" prefWidth="207.0" promptText="*********" styleClass="text-field" stylesheets="@cssshit/primary.css" />
+            <TextField fx:id="signpg_emailfeld" layoutX="236.0" layoutY="138.0" prefHeight="25.0" prefWidth="207.0" promptText="Email Address" styleClass="text-field" stylesheets="@cssshit/primary.css" />
+            <Button fx:id="signpg_signup_btn" layoutX="357.0" layoutY="297.0" mnemonicParsing="false" onAction="#sign_sg_up" prefHeight="37.0" prefWidth="207.0" styleClass="t_btn" stylesheets="@cssshit/primary.css" text="Sign up" />
+            <ImageView fitHeight="79.0" fitWidth="88.0" layoutX="103.0" layoutY="30.0">
+               <image>
+                  <Image url="@img/Signup.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="sign_back_btn" layoutY="5.0" mnemonicParsing="false" onAction="#back_btn" prefHeight="65.0" prefWidth="81.0" styleClass="st_btn" stylesheets="@cssshit/primary.css">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="58.0">
+                     <image>
+                        <Image url="@img/Back_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

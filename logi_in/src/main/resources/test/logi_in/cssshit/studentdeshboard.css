@@ -1,0 +1,100 @@
+.top_page {
+    -fx-background-color: linear-gradient(to right, #0d9b7ce8, #040b0e15);
+}
+
+.side_page2 {
+    -fx-background-color: linear-gradient(to bottom, #570677d8, #040b0e15);
+}
+.main_page2 {
+    -fx-background-color: linear-gradient(to bottom, #170677d8, #040b0e15);
+}
+
+.top_label {
+    /* -fx-font-size: 22px; /* Font size for the label */
+    -fx-text-fill: #000000;
+    /* Text color for the label */
+    -fx-font-family: "Baskerville Old Face";
+    /* Specify the font family */
+    -fx-font-style: italic;
+
+    -fx-font-size: 40px;
+    /* Font size for the label */
+    -fx-text-fill: linear-gradient(to right, #0a0e4ec7, #000000);
+    /* Gradient from red to blue */
+
+
+}
+.combo_label {
+
+    -fx-text-fill: #000000;
+    /* Text color for the label */
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+
+    -fx-font-size: 20px;
+    /* Font size for the label */
+    /*-fx-text-fill: linear-gradient(to right, #ffe600, #000000);*/
+
+}
+.side_label {
+
+    -fx-text-fill: #000000;
+    /* Text color for the label */
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    /*-fx-font-style: italic;*/
+
+    -fx-font-size: 26px;
+    /* Font size for the label */
+    /*-fx-text-fill: linear-gradient(to right, #ffe600, #000000);*/
+
+}
+.show_btn {
+    -fx-background-color: #a2add7;
+    /* Button background color (coral in this example) */
+    -fx-background-radius: 10;
+
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+    /* Set the corner radius to 10 pixels */
+    -fx-text-fill: white;
+    /* Text color for the button */
+}
+
+
+.show_btn:hover {
+    -fx-background-color: #e0d4d0;
+}
+.table {
+    -fx-background-color: #a2add7;
+    /* Button background color (coral in this example) */
+    -fx-background-radius: 10;
+
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+    /* Set the corner radius to 10 pixels */
+    -fx-text-fill: white;
+    /* Text color for the button */
+}
+.logout_btn {
+    -fx-background-color: #ce2121;
+    /* Button background color (coral in this example) */
+    -fx-background-radius: 10;
+
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+    -fx-font-size: 20px;
+    /* Set the corner radius to 10 pixels */
+    -fx-text-fill: white;
+    /* Text color for the button */
+}
+
+.logout_btn:hover {
+    -fx-background-color: #5f1c05;
+}

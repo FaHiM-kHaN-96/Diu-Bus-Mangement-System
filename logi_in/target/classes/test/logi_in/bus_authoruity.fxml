@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.logi_in.BusAthController">
+   <children>
+      <AnchorPane fx:id="ath_loginpage" prefHeight="387.0" prefWidth="600.0" styleClass="backgroundpage2_ath" stylesheets="@cssshit/primary.css">
+         <children>
+            <Label layoutX="90.0" layoutY="173.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Username" />
+            <Label layoutX="243.0" layoutY="48.0" prefHeight="42.0" prefWidth="220.0" styleClass="t_label_bus_authority" stylesheets="@cssshit/primary.css" text="Bus Authority" />
+            <Label layoutX="90.0" layoutY="259.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Password" />
+            <TextField fx:id="at_ag_usrnemfld" layoutX="208.0" layoutY="169.0" prefHeight="25.0" prefWidth="200.0" promptText="username" stylesheets="@cssshit/primary.css" />
+            <Label fx:id="passlabel" layoutX="90.0" layoutY="342.0" prefHeight="25.0" prefWidth="200.0" stylesheets="@cssshit/primary.css" />
+            <Button fx:id="ath_login_btn" layoutX="385.0" layoutY="317.0" mnemonicParsing="false" onAction="#switch_to_ath_dashbord" prefHeight="37.0" prefWidth="106.0" styleClass="t_btn" stylesheets="@cssshit/primary.css" text="Log in" />
+            <Button fx:id="ath_signIN_btn" layoutX="211.0" layoutY="376.0" mnemonicParsing="false" onAction="#switch_to_ath_signform" prefHeight="42.0" prefWidth="200.0" styleClass="st_btn_ath" stylesheets="@cssshit/primary.css" text="Sign Up" />
+            <ImageView fitHeight="50.0" fitWidth="127.0" layoutX="84.0" layoutY="44.0">
+               <image>
+                  <Image url="@img/bus%20logo%203.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="ath_passlabel1" layoutX="209.0" layoutY="254.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field" stylesheets="@cssshit/primary.css" />
+            <PasswordField fx:id="ath_lgpg_passfeld" layoutX="208.0" layoutY="254.0" prefHeight="25.0" prefWidth="200.0" promptText="***********" styleClass="passview_btn" stylesheets="@cssshit/primary.css" />
+            <ToggleButton fx:id="ath_togglebtn" layoutX="357.0" layoutY="247.0" mnemonicParsing="false" onAction="#ath_showpass_btn" prefHeight="39.0" prefWidth="39.0" styleClass="passb_btn" stylesheets="@cssshit/primary.css">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@img/eye.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ath_signpage" prefHeight="200.0" prefWidth="200.0" styleClass="backgroundpage_ath" stylesheets="@cssshit/primary.css" visible="false">
+         <children>
+            <Button fx:id="ath_sign_back_btn" mnemonicParsing="false" onAction="#ath_back_btn" prefHeight="65.0" prefWidth="81.0" styleClass="st_btn" stylesheets="@cssshit/primary.css">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="58.0">
+                     <image>
+                        <Image url="@img/Back_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="79.0" fitWidth="88.0" layoutX="110.0" layoutY="33.0">
+               <image>
+                  <Image url="@img/Signup.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ath_signpg_signup_btn" layoutX="343.0" layoutY="345.0" mnemonicParsing="false" onAction="#ath_sign_sg_up" prefHeight="37.0" prefWidth="207.0" styleClass="t_btn" stylesheets="@cssshit/primary.css" text="Sign up" />
+            <TextField fx:id="ath_sign_email" layoutX="197.0" layoutY="150.0" prefHeight="25.0" prefWidth="207.0" promptText="Email Address" styleClass="t_label" stylesheets="@cssshit/primary.css" />
+            <TextField fx:id="ath_signpg_passfeld" layoutX="197.0" layoutY="220.0" prefHeight="25.0" prefWidth="207.0" promptText="*********" styleClass="t_label" stylesheets="@cssshit/primary.css" />
+            <TextField fx:id="ath_signpg_repassfeld" layoutX="197.0" layoutY="284.0" prefHeight="25.0" prefWidth="207.0" promptText="*********" styleClass="t_label" stylesheets="@cssshit/primary.css" />
+            <Label layoutX="83.0" layoutY="223.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Password" />
+            <Label layoutX="227.0" layoutY="56.0" prefHeight="47.0" prefWidth="180.0" styleClass="t_label" stylesheets="@cssshit/primary.css" text="Create Account">
+               <font>
+                  <Font name="Tahoma Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="287.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Re-password" />
+            <Label layoutX="83.0" layoutY="153.0" styleClass="labeltwo" stylesheets="@cssshit/primary.css" text="Email " />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

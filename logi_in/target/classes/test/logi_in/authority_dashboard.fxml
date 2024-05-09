@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.logi_in.AthdashboardController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane prefHeight="106.0" prefWidth="975.0" styleClass="top_page" stylesheets="@cssshit/studentdeshboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="268.0" layoutY="30.0" styleClass="top_label" stylesheets="@cssshit/studentdeshboard.css" text="Bus Authority Management" />
+                  <Button layoutX="27.0" layoutY="17.0" mnemonicParsing="false" onAction="#refresh_rlode_btn" styleClass="st_btn" stylesheets="@cssshit/primary.css">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="155.0">
+                           <image>
+                              <Image url="@img/bus%20logo%203.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="refresh_btn" layoutX="850.0" layoutY="22.0" mnemonicParsing="false" onAction="#refresh_rlode_btn" styleClass="st_btn" stylesheets="@cssshit/primary.css">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="54.0">
+                           <image>
+                              <Image url="@img/pngwing.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Refresh" />
+                     </tooltip>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="372.0" prefWidth="153.0" styleClass="main_page2" stylesheets="@cssshit/studentdeshboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="ath_logout_btn" layoutX="6.0" layoutY="321.0" mnemonicParsing="false" onAction="#ath_log_out" prefHeight="37.0" prefWidth="100.0" styleClass="logout_btn" stylesheets="@cssshit/studentdeshboard.css" text="Log out" />
+                  <ImageView fitHeight="89.0" fitWidth="106.0" layoutX="24.0" layoutY="14.0">
+                     <image>
+                        <Image url="@img/content-management-system_2630878.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="12.0" layoutY="163.0" styleClass="side_label" stylesheets="@cssshit/studentdeshboard.css" text="DashBoard" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="372.0" prefWidth="813.0" styleClass="backgroundpage" stylesheets="@cssshit/primary.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="add_bus_btn" layoutX="34.0" layoutY="298.0" mnemonicParsing="false" onAction="#add_bus_switch" prefHeight="37.0" prefWidth="98.0" styleClass="add_btn" stylesheets="@cssshit/ath_dashboard.css" text="Add Bus">
+                     <tooltip>
+                        <Tooltip text="For refresh the  page p;" />
+                     </tooltip></Button>
+                  <Button fx:id="Bus_return_btn" layoutX="604.0" layoutY="295.0" mnemonicParsing="false" onAction="#bus_return_switch" prefHeight="43.0" prefWidth="180.0" styleClass="return_bus_btn" stylesheets="@cssshit/ath_dashboard.css" text="Bus Return Clearance">
+                     <tooltip>
+                        <Tooltip text="Bus return Confermation" />
+                     </tooltip></Button>
+                  <Button fx:id="Card_chacker_btn" layoutX="401.0" layoutY="295.0" mnemonicParsing="false" onAction="#card_checker_switch" prefHeight="43.0" prefWidth="135.0" styleClass="card_clearence_btn" stylesheets="@cssshit/ath_dashboard.css" text="Card Clearance">
+                     <tooltip>
+                        <Tooltip text="Card Checker" />
+                     </tooltip></Button>
+                  <Button fx:id="assign_trip_btn" layoutX="220.0" layoutY="297.0" mnemonicParsing="false" onAction="#assign_bus_switch" prefHeight="39.0" prefWidth="103.0" styleClass="assign_btn" stylesheets="@cssshit/ath_dashboard.css" text="Assign Trip">
+                     <tooltip>
+                        <Tooltip text="Assign a route" />
+                     </tooltip></Button>
+                  <GridPane fx:id="ath_gardpane" layoutX="-2.0" layoutY="2.0" prefHeight="264.0" prefWidth="822.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TableView fx:id="ath_table_vies" prefHeight="260.0" prefWidth="822.0" scaleShape="false" styleClass="table" stylesheets="@cssshit/studentdeshboard.css">
+                           <columns>
+                              <TableColumn fx:id="all_buses" prefWidth="181.0" resizable="false" text="All Buses" />
+                              <TableColumn fx:id="capacity_table" prefWidth="226.0" resizable="false" text="Capacity" />
+                              <TableColumn fx:id="available_bus_table" minWidth="5.0" prefWidth="192.0" resizable="false" text="Available Bus" />
+                              <TableColumn fx:id="on_trip_table" prefWidth="222.0" resizable="false" text="On Trip Bus" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

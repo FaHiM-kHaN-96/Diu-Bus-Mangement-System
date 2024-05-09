@@ -1,0 +1,61 @@
+.ancr_lb {
+   
+   
+    -fx-background-color: linear-gradient(to right, #1da80bd0, #2c34aade);
+
+
+
+}
+
+.titel_label {
+    /* -fx-font-size: 22px; /* Font size for the label */
+    -fx-text-fill: #000000;
+    /* Text color for the label */
+    -fx-font-family: "Arial Rounded MT Bold";
+    /* Specify the font family */
+    /*-fx-font-style: italic;*/
+
+    -fx-font-size: 26px;
+    /* Font size for the label */
+    -fx-text-fill: linear-gradient(to bottom, #0c279ee3, #000000);
+    /* Gradient from red to blue */
+
+
+}
+
+.all_label {
+    /* -fx-font-size: 22px; /* Font size for the label */
+    -fx-text-fill: #000000;
+    /* Text color for the label */
+    -fx-font-family: "Arial Rounded MT Bold";
+    /* Specify the font family */
+    /*-fx-font-style: italic;*/
+
+    -fx-font-size: 16px;
+    
+    /* Font size for the label */
+    -fx-text-fill: linear-gradient(to bottom, #ad1616c2, #000000);
+    /* Gradient from red to blue */
+
+
+}
+.all_t_feld{
+    -fx-font-size: 16px;
+    -fx-padding: 1px;
+}
+.text-field:focused {
+    -fx-background-color: #e7c2c2; /* Background color when focused */
+    -fx-border-color: #0000ff; /* Border color when focused */
+}
+.submit_btn {
+    -fx-background-color: #f0e9d8;
+    -fx-font-size: 16px; /* Font size for the button text */
+    -fx-background-radius: 10;
+    -fx-font-family: "Arial Rounded MT Bold"; /* Font family for the button text */
+    -fx-background-color: #ff5622e5; /* Button background color (green in this example) */
+    -fx-text-fill: rgb(0, 0, 0);
+}
+
+.submit_btn:hover {
+    -fx-background-color: #34246b;
+}

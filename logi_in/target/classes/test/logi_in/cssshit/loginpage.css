@@ -1,0 +1,53 @@
+/* styles.css */
+
+
+.backgroundpage {
+    -fx-background-color: linear-gradient(to top, #3f7455, #4064c7b2);
+}
+
+.backgroundpage2 {
+    -fx-background-color: linear-gradient(to top, #3f7455, #4064c7b2);
+}
+
+.t_btn {
+    -fx-background-color: #b17323;
+    /* Button background color (coral in this example) */
+    -fx-background-radius: 5;
+    /* Set the corner radius to 10 pixels */
+    -fx-text-fill: rgba(31, 7, 7, 0.644);
+    /* Text color for the button */
+}
+
+.t_btn:hover {
+    -fx-background-color: #e0d4d0;
+}
+
+
+.t_label {
+    /* -fx-font-size: 22px; /* Font size for the label */
+   
+    /* Text color for the label */
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+    -fx-font-style: italic;
+
+    -fx-font-size: 35px;
+    /* Font size for the label */
+    -fx-text-fill: linear-gradient(to bottom, #1c1b20c4, #641616);
+    /* Gradient from red to blue */
+
+
+}
+
+.label_usrname_password {
+
+    -fx-text-fill: #000000;
+    /* Text color for the label */
+    -fx-font-family: "Arial";
+    /* Specify the font family */
+
+    -fx-font-size: 20px;
+    /* Font size for the label */
+    /*-fx-text-fill: linear-gradient(to right, #ffe600, #000000);*/
+
+}
